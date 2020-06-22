@@ -88,57 +88,57 @@ var assign = __webpack_require__(1);
 var defaults = __webpack_require__(2);
 
 var klayNSLookup = {
-  'addUnnecessaryBendpoints': 'de.cau.cs.kieler.klay.layered.unnecessaryBendpoints',
-  'alignment': 'de.cau.cs.kieler.alignment',
-  'aspectRatio': 'de.cau.cs.kieler.aspectRatio',
-  'borderSpacing': 'borderSpacing',
-  'compactComponents': 'de.cau.cs.kieler.klay.layered.components.compact',
-  'compactionStrategy': 'de.cau.cs.kieler.klay.layered.nodeplace.compactionStrategy',
-  'contentAlignment': 'de.cau.cs.kieler.klay.layered.contentAlignment',
-  'crossingMinimization': 'de.cau.cs.kieler.klay.layered.crossMin',
-  'cycleBreaking': 'de.cau.cs.kieler.klay.layered.cycleBreaking',
-  'debugMode': 'de.cau.cs.kieler.debugMode',
-  'direction': 'de.cau.cs.kieler.direction',
-  'edgeLabelSideSelection': 'de.cau.cs.kieler.klay.layered.edgeLabelSideSelection',
+  addUnnecessaryBendpoints: 'de.cau.cs.kieler.klay.layered.unnecessaryBendpoints',
+  alignment: 'de.cau.cs.kieler.alignment',
+  aspectRatio: 'de.cau.cs.kieler.aspectRatio',
+  borderSpacing: 'borderSpacing',
+  compactComponents: 'de.cau.cs.kieler.klay.layered.components.compact',
+  compactionStrategy: 'de.cau.cs.kieler.klay.layered.nodeplace.compactionStrategy',
+  contentAlignment: 'de.cau.cs.kieler.klay.layered.contentAlignment',
+  crossingMinimization: 'de.cau.cs.kieler.klay.layered.crossMin',
+  cycleBreaking: 'de.cau.cs.kieler.klay.layered.cycleBreaking',
+  debugMode: 'de.cau.cs.kieler.debugMode',
+  direction: 'de.cau.cs.kieler.direction',
+  edgeLabelSideSelection: 'de.cau.cs.kieler.klay.layered.edgeLabelSideSelection',
   // <broken> 'de.cau.cs.kieler.klay.layered.edgeNodeSpacingFactor': options.edgeNodeSpacingFactor,
-  'edgeRouting': 'de.cau.cs.kieler.edgeRouting',
-  'edgeSpacingFactor': 'de.cau.cs.kieler.klay.layered.edgeSpacingFactor',
-  'feedbackEdges': 'de.cau.cs.kieler.klay.layered.feedBackEdges',
-  'fixedAlignment': 'de.cau.cs.kieler.klay.layered.fixedAlignment',
-  'greedySwitchCrossingMinimization': 'de.cau.cs.kieler.klay.layered.greedySwitch',
-  'hierarchyHandling': 'de.cau.cs.kieler.hierarchyHandling',
-  'inLayerSpacingFactor': 'de.cau.cs.kieler.klay.layered.inLayerSpacingFactor',
-  'interactiveReferencePoint': 'de.cau.cs.kieler.klay.layered.interactiveReferencePoint',
-  'layerConstraint': 'de.cau.cs.kieler.klay.layered.layerConstraint',
-  'layoutHierarchy': 'de.cau.cs.kieler.layoutHierarchy',
-  'linearSegmentsDeflectionDampening': 'de.cau.cs.kieler.klay.layered.linearSegmentsDeflectionDampening',
-  'mergeEdges': 'de.cau.cs.kieler.klay.layered.mergeEdges',
-  'mergeHierarchyCrossingEdges': 'de.cau.cs.kieler.klay.layered.mergeHierarchyEdges',
-  'noLayout': 'de.cau.cs.kieler.noLayout',
-  'nodeLabelPlacement': 'de.cau.cs.kieler.nodeLabelPlacement',
-  'nodeLayering': 'de.cau.cs.kieler.klay.layered.nodeLayering',
-  'nodePlacement': 'de.cau.cs.kieler.klay.layered.nodePlace',
-  'portAlignment': 'de.cau.cs.kieler.portAlignment',
-  'portAlignmentEastern': 'de.cau.cs.kieler.portAlignment.east',
-  'portAlignmentNorth': 'de.cau.cs.kieler.portAlignment.north',
-  'portAlignmentSouth': 'de.cau.cs.kieler.portAlignment.south',
-  'portAlignmentWest': 'de.cau.cs.kieler.portAlignment.west',
-  'portConstraints': 'de.cau.cs.kieler.portConstraints',
-  'portLabelPlacement': 'de.cau.cs.kieler.portLabelPlacement',
-  'portOffset': 'de.cau.cs.kieler.offset',
-  'portSide': 'de.cau.cs.kieler.portSide',
-  'portSpacing': 'de.cau.cs.kieler.portSpacing',
-  'postCompaction': 'de.cau.cs.kieler.klay.layered.postCompaction',
-  'priority': 'de.cau.cs.kieler.priority',
-  'randomizationSeed': 'de.cau.cs.kieler.randomSeed',
-  'routeSelfLoopInside': 'de.cau.cs.kieler.selfLoopInside',
-  'separateConnectedComponents': 'de.cau.cs.kieler.separateConnComp',
-  'sizeConstraint': 'de.cau.cs.kieler.sizeConstraint',
-  'sizeOptions': 'de.cau.cs.kieler.sizeOptions',
-  'spacing': 'de.cau.cs.kieler.spacing',
-  'splineSelfLoopPlacement': 'de.cau.cs.kieler.klay.layered.splines.selfLoopPlacement',
-  'thoroughness': 'de.cau.cs.kieler.klay.layered.thoroughness',
-  'wideNodesOnMultipleLayers': 'de.cau.cs.kieler.klay.layered.wideNodesOnMultipleLayers'
+  edgeRouting: 'de.cau.cs.kieler.edgeRouting',
+  edgeSpacingFactor: 'de.cau.cs.kieler.klay.layered.edgeSpacingFactor',
+  feedbackEdges: 'de.cau.cs.kieler.klay.layered.feedBackEdges',
+  fixedAlignment: 'de.cau.cs.kieler.klay.layered.fixedAlignment',
+  greedySwitchCrossingMinimization: 'de.cau.cs.kieler.klay.layered.greedySwitch',
+  hierarchyHandling: 'de.cau.cs.kieler.hierarchyHandling',
+  inLayerSpacingFactor: 'de.cau.cs.kieler.klay.layered.inLayerSpacingFactor',
+  interactiveReferencePoint: 'de.cau.cs.kieler.klay.layered.interactiveReferencePoint',
+  layerConstraint: 'de.cau.cs.kieler.klay.layered.layerConstraint',
+  layoutHierarchy: 'de.cau.cs.kieler.layoutHierarchy',
+  linearSegmentsDeflectionDampening: 'de.cau.cs.kieler.klay.layered.linearSegmentsDeflectionDampening',
+  mergeEdges: 'de.cau.cs.kieler.klay.layered.mergeEdges',
+  mergeHierarchyCrossingEdges: 'de.cau.cs.kieler.klay.layered.mergeHierarchyEdges',
+  noLayout: 'de.cau.cs.kieler.noLayout',
+  nodeLabelPlacement: 'de.cau.cs.kieler.nodeLabelPlacement',
+  nodeLayering: 'de.cau.cs.kieler.klay.layered.nodeLayering',
+  nodePlacement: 'de.cau.cs.kieler.klay.layered.nodePlace',
+  portAlignment: 'de.cau.cs.kieler.portAlignment',
+  portAlignmentEastern: 'de.cau.cs.kieler.portAlignment.east',
+  portAlignmentNorth: 'de.cau.cs.kieler.portAlignment.north',
+  portAlignmentSouth: 'de.cau.cs.kieler.portAlignment.south',
+  portAlignmentWest: 'de.cau.cs.kieler.portAlignment.west',
+  portConstraints: 'de.cau.cs.kieler.portConstraints',
+  portLabelPlacement: 'de.cau.cs.kieler.portLabelPlacement',
+  portOffset: 'de.cau.cs.kieler.offset',
+  portSide: 'de.cau.cs.kieler.portSide',
+  portSpacing: 'de.cau.cs.kieler.portSpacing',
+  postCompaction: 'de.cau.cs.kieler.klay.layered.postCompaction',
+  priority: 'de.cau.cs.kieler.priority',
+  randomizationSeed: 'de.cau.cs.kieler.randomSeed',
+  routeSelfLoopInside: 'de.cau.cs.kieler.selfLoopInside',
+  separateConnectedComponents: 'de.cau.cs.kieler.separateConnComp',
+  sizeConstraint: 'de.cau.cs.kieler.sizeConstraint',
+  sizeOptions: 'de.cau.cs.kieler.sizeOptions',
+  spacing: 'de.cau.cs.kieler.spacing',
+  splineSelfLoopPlacement: 'de.cau.cs.kieler.klay.layered.splines.selfLoopPlacement',
+  thoroughness: 'de.cau.cs.kieler.klay.layered.thoroughness',
+  wideNodesOnMultipleLayers: 'de.cau.cs.kieler.klay.layered.wideNodesOnMultipleLayers'
 };
 
 var mapToKlayNS = function mapToKlayNS(klayOpts) {
@@ -162,14 +162,20 @@ var klayOverrides = {
 
 var getPos = function getPos(ele) {
   var parent = ele.parent();
-  var k = ele.scratch('klay');
+  var elStatic = ele.scratch('static');
+  var k = elStatic || ele.scratch('klay');
   var p = {
     x: k.x,
     y: k.y
   };
 
+  // if we had a static object, don't continue
+  if (elStatic) {
+    return p;
+  }
+
   if (parent.nonempty()) {
-    var kp = parent.scratch('klay');
+    var kp = parent.scratch('static') || parent.scratch('klay');
 
     p.x += kp.x;
     p.y += kp.y;
@@ -300,6 +306,50 @@ function Layout(options) {
   this.options.klay = assign({}, defaults.klay, klayOptions, klayOverrides);
 }
 
+var heightCollision = 150;
+var widthCollision = 120;
+
+var testCollision = function testCollision(posX, posY, staticCoords) {
+  var collision = false;
+
+  // use a for loop to break once we find it
+  // staticCoords[i][0=x,1=y]
+  for (var i = staticCoords.length - 1; i >= 0; i--) {
+    if (Math.abs(staticCoords[i][1] - posY) < heightCollision && Math.abs(staticCoords[i][0] - posX) < widthCollision) {
+      collision = true;
+      break;
+    }
+  }
+
+  return collision;
+};
+
+var safeNode = function safeNode(node, staticCoords) {
+  var scratch = node.scratch('elk');
+  var posX = scratch.x;
+  var posY = scratch.y;
+  var flipMovement = false;
+
+  // while collision exists, keep moving flipping between horizontal and vertical until no collisions
+  while (testCollision(posX, posY, staticCoords)) {
+    if (flipMovement) {
+      posX += widthCollision;
+    } else {
+      posY += heightCollision;
+    }
+
+    flipMovement = !flipMovement;
+  }
+
+  if (posX !== scratch.x || posY !== scratch.y) {
+    staticCoords.push([posX, posY]);
+    node.scratch('static', {
+      x: posX,
+      y: posY
+    });
+  }
+};
+
 Layout.prototype.run = function () {
   var layout = this;
   var options = this.options;
@@ -319,9 +369,114 @@ Layout.prototype.run = function () {
     }
   });
 
-  nodes.filter(function (n) {
+  var filteredNodes = nodes.filter(function (n) {
     return !n.isParent();
-  }).layoutPositions(layout, options, getPos);
+  });
+
+  var staticCoords = [];
+  var staticBox = {
+    xMax: null,
+    xMin: null,
+    yMax: null,
+    yMin: null
+  };
+
+  var newNodes = filteredNodes.filter(function (n) {
+    return !n.scratch('static');
+  });
+  var staticNodes = filteredNodes.filter(function (n) {
+    return !!n.scratch('static');
+  });
+
+  var isGroupMove = newNodes.length > 1 && staticNodes.length > 1;
+
+  // these nodes are not moved
+  staticNodes.layoutPositions(layout, options, getPos).forEach(function (node) {
+    var _node$scratch = node.scratch('static'),
+        x = _node$scratch.x,
+        y = _node$scratch.y;
+
+    if (isGroupMove) {
+      if (staticBox.xMax === null) {
+        staticBox.xMax = x;
+        staticBox.xMin = x;
+        staticBox.yMax = y;
+        staticBox.yMin = y;
+      } else {
+        staticBox.xMax = Math.max(staticBox.xMax, x);
+        staticBox.xMin = Math.min(staticBox.xMin, x);
+        staticBox.yMax = Math.max(staticBox.yMax, y);
+        staticBox.yMin = Math.min(staticBox.yMin, y);
+      }
+    } else {
+      staticCoords.push([x, y]);
+    }
+  });
+
+  if (isGroupMove) {
+    // we need to move it as 1
+    var newBox = {
+      xMax: null,
+      xMin: null,
+      yMax: null,
+      yMin: null
+    };
+
+    newNodes.forEach(function (node) {
+      var scratch = node.scratch('elk');
+
+      if (newBox.xMax === null) {
+        newBox.xMax = scratch.x;
+        newBox.xMin = scratch.x;
+        newBox.yMax = scratch.y;
+        newBox.yMin = scratch.y;
+      } else {
+        newBox.xMax = Math.max(newBox.xMax, scratch.x);
+        newBox.xMin = Math.min(newBox.xMin, scratch.x);
+        newBox.yMax = Math.max(newBox.yMax, scratch.y);
+        newBox.yMin = Math.min(newBox.yMin, scratch.y);
+      }
+    });
+
+    if (newBox.xMax <= staticBox.xMax + 100 && newBox.xMax >= staticBox.xMin - 100 || newBox.xMin <= staticBox.xMax + 100 && newBox.xMin >= staticBox.xMin - 100 || newBox.yMax <= staticBox.yMax + 100 && newBox.yMax >= staticBox.yMin - 100 || newBox.yMin <= staticBox.yMax + 100 && newBox.yMin >= staticBox.yMin - 100) {
+      // this box has collision, lets move the least amount
+      // we need bottom-right movement
+      // right = new x min -> static x max
+      // bottom = new y max -> static y min
+      var xDiff = Math.abs(newBox.xMin - staticBox.xMax);
+      var yDiff = Math.abs(newBox.yMax - staticBox.yMin);
+
+      if (xDiff < yDiff) {
+        // this means Y is bigger, so move X
+        newNodes.forEach(function (node) {
+          var scratch = node.scratch('elk');
+
+          node.scratch('static', {
+            x: scratch.x + xDiff + widthCollision,
+            y: scratch.y
+          });
+        });
+      } else {
+        // this means X is bigger, so move Y
+        newNodes.forEach(function (node) {
+          var scratch = node.scratch('elk');
+
+          node.scratch('static', {
+            x: scratch.x,
+            y: scratch.y + yDiff + heightCollision
+          });
+        });
+      }
+    }
+  } else {
+    if (staticCoords.length) {
+      newNodes.forEach(function (node) {
+        return safeNode(node, staticCoords);
+      });
+    }
+  }
+
+  newNodes.layoutPositions(layout, options, getPos);
 
   return this;
 };

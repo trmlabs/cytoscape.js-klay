@@ -86,15 +86,15 @@ const klayOverrides = {
 
 const getPos = function (ele) {
   let parent = ele.parent();
-  const static = ele.scratch('static');
-  let k = static || ele.scratch('klay');
+  const elStatic = ele.scratch('static');
+  let k = elStatic || ele.scratch('klay');
   let p = {
     x: k.x,
     y: k.y,
   };
 
   // if we had a static object, don't continue
-  if (static) {
+  if (elStatic) {
     return p;
   }
 
