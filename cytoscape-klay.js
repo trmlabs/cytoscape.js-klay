@@ -325,7 +325,7 @@ var testCollision = function testCollision(posX, posY, staticCoords) {
 };
 
 var safeNode = function safeNode(node, staticCoords) {
-  var scratch = node.scratch('elk');
+  var scratch = node.scratch('klay');
   var posX = scratch.x;
   var posY = scratch.y;
   var flipMovement = false;
@@ -423,7 +423,7 @@ Layout.prototype.run = function () {
     };
 
     newNodes.forEach(function (node) {
-      var scratch = node.scratch('elk');
+      var scratch = node.scratch('klay');
 
       if (newBox.xMax === null) {
         newBox.xMax = scratch.x;
@@ -449,7 +449,7 @@ Layout.prototype.run = function () {
       if (xDiff < yDiff) {
         // this means Y is bigger, so move X
         newNodes.forEach(function (node) {
-          var scratch = node.scratch('elk');
+          var scratch = node.scratch('klay');
 
           node.scratch('static', {
             x: scratch.x + xDiff + widthCollision,
@@ -459,7 +459,7 @@ Layout.prototype.run = function () {
       } else {
         // this means X is bigger, so move Y
         newNodes.forEach(function (node) {
-          var scratch = node.scratch('elk');
+          var scratch = node.scratch('klay');
 
           node.scratch('static', {
             x: scratch.x,

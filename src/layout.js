@@ -257,7 +257,7 @@ const testCollision = (posX, posY, staticCoords) => {
 };
 
 const safeNode = (node, staticCoords) => {
-  const scratch = node.scratch('elk');
+  const scratch = node.scratch('klay');
   let posX = scratch.x;
   let posY = scratch.y;
   let flipMovement = false;
@@ -347,7 +347,7 @@ Layout.prototype.run = function () {
     };
 
     newNodes.forEach((node) => {
-      const scratch = node.scratch('elk');
+      const scratch = node.scratch('klay');
 
       if (newBox.xMax === null) {
         newBox.xMax = scratch.x;
@@ -382,7 +382,7 @@ Layout.prototype.run = function () {
       if (xDiff < yDiff) {
         // this means Y is bigger, so move X
         newNodes.forEach((node) => {
-          const scratch = node.scratch('elk');
+          const scratch = node.scratch('klay');
 
           node.scratch('static', {
             x: scratch.x + xDiff + widthCollision,
@@ -392,7 +392,7 @@ Layout.prototype.run = function () {
       } else {
         // this means X is bigger, so move Y
         newNodes.forEach((node) => {
-          const scratch = node.scratch('elk');
+          const scratch = node.scratch('klay');
 
           node.scratch('static', {
             x: scratch.x,
